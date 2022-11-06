@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Horario de clase</title>
+        <style>
+            body{
+                background-color: beige;
+            }
+            form{
+                margin: 0 auto;
+                width: 40%;
+            }
+            h1{
+                text-align: center;
+                background-color: rgb(0, 0, 110);
+                color: white;
+                margin-bottom: 30px;
+            }
+            table, td{
+                border:1px solid rgb(0, 0, 110);
+                border-collapse:collapse;
+            }
+            table {
+                width: 100%;
+            }
+            td{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FORMULARIO DE CONTACTO</h1>
+        <form action="" method="post">
+          <fieldset>
+            <legend>Datos Personales</legend>
+            <label>Nombre</label>
+            <input type="text" placeholder="Introduce tu nombre" required><br>
+            <label>Email</label>
+            <input type="email" placeholder="Introduce email" required><br>
+          </fieldset>
+          <fieldset>
+            <legend>Otros Datos</legend>
+            <label>Edad</label>
+            <input type="number" placeholder="Introduce tu edad" min="18" max="60"><br>
+            <label>Comensales</label>
+            <input type="text" min="18" max="60" list="lista">
+            <datalist id="lista">
+                <option value="18" label="18"></option>
+                <option value="19" label="19"></option>
+                <option value="20" label="20"></option>
+                <option value="21" label="21"></option>
+            </datalist>
+        <fieldset>
+            <input type="submit" name="enviar" value="Enviar" onclick="operacion()">
+            <input type="reset" name="borrar" value="Borrar">
+        </fieldset>
+          </fieldset>
+        </form>
+    </body>
+</html>

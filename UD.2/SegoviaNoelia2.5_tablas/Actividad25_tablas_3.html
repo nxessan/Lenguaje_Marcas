@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Tabla 2</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            table {
+                width: 500px;
+                border: black 1px groove;
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+            td{
+                padding: 9px;
+            }
+            h2{
+                font-style: inherit;
+                font-family:'Times New Roman', Times, serif;
+                font-weight: 200;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tabla 3</h1>
+        <h2><i>Tablas anidadas</i></h2>
+          <table>
+            <tr style="border: black 1px groove">
+                <td style="background-color: #fec100"></td>
+                <td style="background-color: #2d73b5; border: black 1px groove"></td>
+                <td style="background-color: #ff0000; border: black 1px groove"></td>                    
+                <td style="background-color: #fec100"></td>
+            </tr>
+            <tr>
+                <td colspan="4" style="padding: 0;">
+                    <table  style="width: 40%;border: 0px; border-collapse: collapse;">
+                        <tr style="border: black 1px groove">
+                            <td style="background-color: green"></td>
+                            <td style="background-color: yellow"></td>
+                        </tr>
+                        <tr style="border: black 1px groove;">
+                            <td style="background-color: yellow"></td>
+                            <td style="background-color: green"></td>
+                        </tr>
+                    </table>
+                </td>    
+            </tr>
+            <tr style="border: black 1px groove;"> 
+                <td style="background-color: #fec100;"></td>
+                <td style="background-color: #ff0000; border: black 1px groove;"></td>
+                <td style="background-color: #2d73b5; border: black 1px groove;"></td>                    
+                <td style="background-color: #fec100;"></td>
+            </tr>
+        </table>
+    </body>
+</html>

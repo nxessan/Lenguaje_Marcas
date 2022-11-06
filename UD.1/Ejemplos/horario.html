@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Horario de clase</title>
+        <style>
+            body{
+                background: url(img/fondo.jpg);
+                text-align: center;
+            }
+            h1{
+                width: 60%;
+                border: 4px groove pink;
+                border-radius: 15px;
+                background-color: white;
+                color:purple;
+                margin:20px auto;
+                padding: 10px;
+            }
+            table,td{
+                border: 2px solid pink;
+                border-collapse: collapse;
+                font-size: x-large;
+
+            }
+            table{
+                margin: 0 auto;
+                color: purple;
+                background-color: whitesmoke;
+            }
+            td{
+                padding: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Horario de Clase</h1>
+        <table>
+            <tr style="background-color: purple;color:white;">
+                <td></td><td>LUNES</td><td>MARTES</td><td>MIÉRCOLES</td><td>JUEVES</td><td>VIERNES</td>
+            </tr>
+            <tr>
+                <td>3:15</td>
+                <td>FOL</td>
+                <td rowspan="2">LM</td>
+                <td rowspan="3">SI</td>
+                <td rowspan="2">LM</td>
+                <td rowspan="2">SI</td>
+            </tr>
+            <tr>
+                <td>4:15</td>
+                <td>ED</td>
+            </tr>
+            <tr>
+                <td>5:15</td>
+                <td>BD</td>
+                <td>BD</td>
+                <td>ED</td>
+                <td>ED</td>
+            </tr>
+            <tr>
+                <td colspan="6">RECREO</td>
+            </tr>
+            <tr>
+                <td>6:30</td>
+                <td>BD</td>
+                <td rowspan="3">PRO</td>
+                <td>FOL</td>
+                <td>ED</td>
+                <td>BD</td>
+            </tr>
+            <tr>
+                <td>7:30</td>
+                <td rowspan="2">PRO</td>
+                <td rowspan="2">PRO</td>
+                <td rowspan="2">BD</td>
+                <td>FOL</td>
+            </tr>
+            <tr>
+                <td>8:30</td>
+                <td>PRO</td>
+            </tr>
+        </table>  
+    </body>
+</html>

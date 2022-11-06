@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html LANG="es">
+    <head>
+        <title>beatles</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                font-family: Verdana;
+            }
+            h1{
+                color: #333;
+                font-size: 20px;
+            }
+            h2{
+                color: #666;
+                font-size: 16px;
+            }
+            img{
+                width: 400px;
+                height: 200px;
+            }
+            /* He puesto los bordes también a las columnas para que sea igual que en el ejemplo */
+            table, td {
+                border: 1px black solid;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+
+            a{
+                color: blue;
+                font-size: 12px;
+            }
+            p{
+                color: #000;
+                font-size: 12px;
+            }
+            li{
+                color: #000;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>THE BEATLES</h1>
+        <P>Fue una banda de rock británica formada en Liverpool durante los años 60</P>
+        <img src="imagenes/beatles.jpg" alt="">
+        <h2>Integrantes del grupo</h2>
+        <ol>
+            <li>John Lennon</li>
+            <li>Paul McCartney</li>
+            <li>George Harrison</li>
+            <li>Ringo Starr</li>
+        </ol>
+        <h2>Discografía</h2>
+        <!-- Le he puesto los margenes y tamaño medio a este párrafo que viene ahora para que quede centrado, pegado a la tabla y con el tamaño como en el ejemplo -->
+        <p style="margin: auto; margin-left: 90px; font-size: medium; ">Grandes éxitos de los Beatles</p> 
+        <table style="background-color: #fff;" >
+            <!-- He centrado el texto de la cabecera para que quede como en el ejemplo -->
+            <tr style="background-color: #666; color: white; font-size: 14px; text-align: center;">
+                <td>Año</td>
+                <td>Disco</td>
+            </tr>
+            <tr>
+                <td>1964</td>
+                <td>A hard Day's Night</td>
+            </tr>
+            <tr>
+                <td>1967</td>
+                <td>Sgt. Pepper's Lonely Hearts Club Band</td>
+            </tr>
+            <tr>
+                <td>1969</td>
+                <td>Abbey Road</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: #ccc;"> "Sgt. Pepper's Lonely Hearts Club Band" fue el disco más exitoso </td>
+            </tr>
+        </table>
+        <h2>Sitio web oficial</h2>
+        <a target="_blank" href="www.thebeatles.com/">www.thebeatles.com/</a> 
+        <footer>
+            Noelia Segovia Sánchez &reg; 2022        
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario 1</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            table {
+                width: 500px;
+                text-align: left;
+                vertical-align: middle;
+                background-color: white;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            h1{
+                margin-bottom: 15px;
+            }
+            tr, td {
+                padding: 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr style="text-align: center;"><td colspan="2" style="border: 1px solid black;"><h1>FORMULARIO DE CONTACTO</h1></td></tr>
+                <form action="" method="post">
+                    <tr>
+                        <td style="width: 10%;">
+                            <label><strong>Nombre: </strong></label> 
+                        </td>
+                        <td>
+                            <input style="width: 80%;" type="text" name="nombre">                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 10%;">
+                            <label><strong>Sexo: </strong></label> 
+                        </td>
+                        <td>
+                            <input type="radio" name="Varón">
+                            <label>Varón</label>      
+                            <input type="radio" name="Hembra">
+                            <label>Hembra</label>                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 10%;">
+                            <label><strong>E-mail: </strong></label> 
+                        </td>
+                        <td>
+                            <input style="width: 80%;" type="text" name="email">                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 10%;">
+                            <label><strong>Mensaje: </strong></label> 
+                        </td>
+                        <td>
+                            <textarea style="width: 99%;"></textarea></td>                
+                        </td>
+                    </tr>
+                    <tr><td rowspan="2"><strong>Aficiones</strong></td></tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="Deportes">
+                            <label>Deportes</label><br>
+                            <input type="checkbox" name="Música">
+                            <label>Música</label><br>
+                            <input type="checkbox" name="Cine">
+                            <label>Cine</label><br>
+                            <input type="checkbox" name="Lectura">
+                            <label>Lectura</label><br>
+                            <input type="checkbox" name="Otros">
+                            <label>Otros</label><br>
+                         </td>
+                    </tr>
+                    <tr>
+
+                        <td colspan="2" style="text-align: center;">
+                            <input type="submit" name="enviar" value="Enviar" onclick="operacion()">
+                            <input type="reset" name="Restablecer" value="Restablecer">
+                        </td>
+                    </tr>
+        </table>
+    </body>
+</html>

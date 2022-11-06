@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Horario de clase</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label>Número 1</label>
+                    </td>
+                    <td><input type="text" id="num1" placeholder="Introduce un número" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Número 2</label>
+                    </td>
+                    <td><input type="text" id="num2" placeholder="Introduce un número" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Operaciones</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="opera" value="suma">
+                        <label>Sumar</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="opera" value="resta">
+                        <label>Restar</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="opera" value="multiplicar">
+                        <label>Multiplicar</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="opera" value="división">
+                        <label>Dividir</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="enviar" value="Operar" onclick="operacion()"></td>
+                    <td><input type="reset" name="borrar" value="Borrar"></td>
+                </tr>
+            </table>
+        </form>
+        <div id="resultado">
+
+        </div>
+        <script>
+               function operacion(){
+                let n1=parseInt(document.getElementById('num1').value);
+                let n2=parseInt(document.getElementById('num2').value);
+                let s=n1+n2;
+                let r=n1-n2;
+                let m=n1*n2;
+                let d=n1/n2;
+                let opera=document.getElementById('opera').value;
+                if (opera=="suma"){
+                    document.getElementById('resultado').innerHTML="LA SUMA ES " + s;
+                
+                if (opera=="resta"){
+                    document.getElementById('resultado').innerHTML="LA RESTA ES " + s;
+                
+                if (opera=="multiplica"){
+                    document.getElementById('resultado').innerHTML="LA MULTIPLICACIÓN ES " + s;
+               
+                if (opera=="divide"){
+                    document.getElementById('resultado').innerHTML="LA DIVISIÓN ES " + s;
+                }
+            } 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Horario de clase</title>
+        <style>
+            body{
+                background-color: beige;
+            }
+            form{
+                margin: 0 auto;
+                width: 40%;
+            }
+            h1{
+                text-align: center;
+                background-color: rgb(0, 0, 110);
+                color: white;
+                margin-bottom: 30px;
+            }
+            table, td{
+                border:1px solid rgb(0, 0, 110);
+                border-collapse:collapse;
+            }
+            table {
+                width: 100%;
+            }
+            td{
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>FORMULARIO DE CONTACTO</h1>
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label><strong>Nombre</strong></label>
+                    </td>
+                    <td><input type="text" id="num1" placeholder="Introduce Nombre" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>E-mail</strong></label>
+                    </td>
+                    <td><input type="email" placeholder="Introduce email" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Teléfono</strong></label>
+                    </td>
+                    <td><input type="tel" placeholder="Introduce teléfono" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Página Web</strong></label>
+                    </td>
+                    <td><input type="url" placeholder="Introduce web" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Fecha Nacimiento</strong></label>
+                    </td>
+                    <td><input type="date" placeholder="Introduce tu fecha de nacimiento" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label><strong>Currículum</strong></label>
+                    </td>
+                    <td><input type="file" placeholder="Introduce currículum" required></td>
+                </tr>
+                <tr>
+                    <td rowspan="4"><strong>Sexo</strong></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="sexo" value="hombre">
+                        <label>Hombre</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="sexo" value="mujer">
+                        <label>Mujer</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="sexo" value="otros">
+                        <label>Otros</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><strong>Ciudad</strong>
+                        <select name="ciudad" id="">
+                            <option value="Málaga">Málaga</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Jaén">Jaén</option>
+                            <option value="Almería">Almería</option>
+                        </select></td>
+                </tr>
+                <tr><td rowspan="2"><strong>Aficiones</strong></td></tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="futbol">
+                        <label>Fútbol</label><br>
+                        <input type="checkbox" name="senderismo">
+                        <label>Senderismo</label><br>
+                        <input type="checkbox" name="ajedrez">
+                        <label>Ajedrez</label><br>
+                        <input type="checkbox" name="otros">
+                        <label>Otros</label><br>
+                     </td>
+                </tr>
+                <tr><td rowspan="2"><strong>Observaciones</strong></td></tr>
+                <td colspan="2"><textarea cols="30" rows="0"></textarea></td>
+                <tr>
+                    <td><input type="submit" name="enviar" value="Enviar" onclick="operacion()"></td>
+                    <td><input type="reset" name="borrar" value="Borrar"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

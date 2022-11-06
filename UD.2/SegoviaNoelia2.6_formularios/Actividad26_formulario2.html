@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario 2</title>
+    </head>
+    <body>
+        <h1>Restaurante Playamar</h1>
+        <h2> Haz tu reserva</h2>
+        <form action="" method="post">
+            <p>
+                Nombre: <input type=“text” name=“nombre” size="20"/><br></td></tr>
+                Correo electrónico:    <input type="correo" name="correo"/><br>
+                Teléfono: <input type=“text” name=telefono size="20"/>  <br>
+                Fecha de reserva: <input type="date" placeholder="Introduce tu fecha de nacimiento" required><br>
+                Franja Horaria:                         
+                    <select name="ciudad" id="">
+                        <option value="13">13:00 -- 14:00</option>
+                        <option value="14">14:00 -- 15:00</option>
+                        <option value="15">15:00 -- 16:00</option>
+                        <option value="16">16:00 -- 17:00</option>
+                    </select><br>
+                Comensales (min1, max 10): 
+                <select name="comensales" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select><br>
+                Demandas especiales: <br>
+                <textarea name="demandas" id="" cols="20" rows="3" placeholder="alergias, tronas, ..."></textarea><br>
+                <input type="submit" name="enviar" value="Enviar" onclick="operacion()">
+            </p>
+        </form>
+    </body>
+</html>
+
